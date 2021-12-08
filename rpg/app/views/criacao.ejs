@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CRIAÇÃO</title>
+<meta charset="utf-8">
+
+  <script src="js/jquery-2.2.1.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="css/estilo_criacao.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="code.js"></script>
+
+</head>
+<body>
+<div id = "container">
+
+<article id='ficha'><!--area de conteúdo-->
+  
+<section id="atributos">
+<tbody>
+<table width="100%" height="100%">
+
+<tr>
+
+<td class="insercao_atributo">
+
+<label>for</label>
+<input class="form-control grupo1" id='for' type="text" placeholder="Default input" disabled="disabled">
+
+
+
+
+</td>
+
+
+
+
+<td class="insercao_atributo">
+
+<label>con</label>
+<input class="form-control grupo1" id='con' type="text" placeholder="Default input" disabled="disabled">
+
+
+
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="insercao_atributo">
+
+<label>tam</label>
+<input class="form-control grupo2" id='tam' type="text" placeholder="Default input" disabled="disabled">
+
+
+
+
+
+
+</td>
+
+<td class="insercao_atributo">
+
+<label>des</label>
+<input class="form-control grupo1" id='des' type="text" placeholder="Default input" disabled="disabled">
+
+
+
+
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="insercao_atributo">
+
+<label>apa</label>
+<input class="form-control grupo1" id='apa' type="text" placeholder="Default input" disabled="disabled">
+
+
+
+
+
+</td>
+
+
+
+
+<td class="insercao_atributo">
+
+<label>int</label>
+<input class="form-control grupo2" id='int' type="text" placeholder="Default input" disabled="disabled">
+
+
+
+
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="insercao_atributo">
+
+<label>pod</label>
+<input class="form-control grupo1" id='pod' type="text" placeholder="Default input" disabled="disabled">
+
+
+
+
+</td>
+
+
+
+
+<td class="insercao_atributo">
+
+<label>edu</label>
+<input class="form-control grupo2" id='edu' type="text" placeholder="Default input" disabled="disabled">
+
+
+
+
+
+</td>
+
+</tr>
+
+<tr>
+  <td class="insercao_atributo" colspan = "2">
+
+<label>sor</label>
+<input class="form-control grupo3" id='sor' type="text" placeholder="Default input" disabled="disabled">
+
+<button type="button" id='calcularAtributos' class="btn btn-dark">Primary</button>
+
+
+
+</td>
+</tr>
+
+</table>
+
+</tbody>
+</section>
+</article>
+
+
+
+<header id = "paginaInicial"><!--começo do cabeçalho-->
+
+<section id= "logo"></section><!--logo-->
+
+
+<section id="caixa">
+
+  <div id="insercao">
+
+  <h5>Insira a idade do personagem</h5>
+
+  <input class="form-control" id="idade" type="text" placeholder="Default input">
+
+  <button type="button"  class="btn btn-dark" id="enviarIdade" data-toggle="modal" data-target="#exampleModalCenter">Primary</button>
+
+   </div>
+</section>
+ 
+
+  <div id="lista-modificados">
+    
+  </div>
+</section>
+
+
+</header><!--fim do cabeçalho-->
+
+
+<article id="profissao">
+
+
+                                         <!--ocupação-->
+
+<section id="caixa3">
+  <select class="custom-select custom-select-lg mb-3" id="ocupacao">
+    <option value = '' selected>Open this select menu</option>
+
+</select>
+
+<!-- Button trigger modal -->
+<button type="button" id ="selecionarOcupacao" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  Gravar
+</button>
+
+                            <!--começo da tabela de atributos-->
+   <div class="row">
+      <div class="col">
+        <table class="table table-custom table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Atributo</th>
+            <th scope="col">Valor</th>
+          </tr>
+        </thead>
+         <tbody id="tabelaatributos" class="table">
+         </tbody>
+     </table>
+         </div>
+
+</div>
+
+</section>
+
+</article>
+
+                               <!--fim da tabela de atributos-->
+
+                                      
+
+                  <!--fim de ocupação-->
+
+                  <!--Fim atributos-->
+
+<article id="habilidades">
+
+  <h1>Hablidades</h1>
+  <section id="pts">
+    <h4>Insira os pontos ocupacionais</h4>
+    <input type="" name="" id="ptsOcupacionais">
+    <h4>Pontos de interesse</h4>
+    <input type="" name="" id="ptsDeInteresse">
+    <button type="button" class="btn btn-dark">Gravar</button>
+   
+  </section>
+
+<select class="custom-select custom-select-lg mb-3" id="habilidade">
+  <option selected>Open this select menu</option>
+ 
+  </select>
+<button type="button" class="btn btn-primary" data-toggle="modal" id="atribuirValorHabilidade" data-target=".bd-example-modal-sm">Small modal</button>
+
+<section id ="armas">
+  <h1>Armas</h1>
+  <select class="custom-select custom-select-lg mb-3" id="tipo_armas">
+            <option>rifle</option>
+            <option>espingarda</option>
+            <option>fuzil</option>
+            <option>metralhadora</option>
+            <option>submetralhadora</option>
+            <option>pistola</option>
+            <option>outros</option>
+            <option>arma branca</option>
+          </select>
+<br>
+<button type="button" class="btn btn-dark" id='enviar_tipo' >Primary</button>
+<div class="row">
+      <div class="col">
+        <table class="table table-custom">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Arma</th>
+            <th scope="col">Dano</th>
+            <th scope="col">Munição</th>
+            <th scope="col">Época</th>
+          </tr>
+        </thead>
+         <tbody id="lista_armas">
+         </tbody>
+     </table>
+         </div>
+</div>
+<img src="images/bau.jpg" id="inventario">
+<button type="button" class="btn btn-dark" id="encerrar" onclick="gravarDados()">Encerrar</button>
+</article>
+
+</section>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="opcoesModificadores">
+        
+      </div>
+      <div class="modal-footer" id ="button" > 
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Inclui todos os plugins compilados (abaixo), ou inclua arquivos separadados se necessário -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src='/socket.io/socket.io.js'></script>
+
+    <script>
+      var socket = io('http://localhost')
+
+     
+                                       //Recuperando Informações do BD
+
+
+       socket.emit('valoresIniciais') 
+
+
+
+    
+      socket.on('valoresHabilidades',function(dados){
+        var habilidade = dados.habilidades
+
+        for(var i = 0; i<habilidade.length; i++){
+            var html = ''
+
+             html +='<option>'+ habilidade[i].valor_base + '% ' + habilidade[i].habilidade+'</option>'
+
+              $('#habilidade').append(html)
+        }
+    })
+
+      socket.on('valoresProfissao',function(dados){
+        var profissoes = dados.profissao
+
+        for(var i = 0; i<profissoes.length; i++){
+            var html = ''
+
+             html +='<option>'+ profissoes[i].profissao + '</option>'
+
+              $('#ocupacao').append(html)
+        }
+    })
+
+
+
+      $('#enviar_tipo').click(function(){
+        $('#lista_armas').empty();
+        socket.emit('puxarArmas', 
+          {tipo:$('#tipo_armas').val()})
+        })
+
+  socket.on('imprimirArmas',function(dados){
+
+        console.log('voltou')
+        var armas = dados.armas
+
+        
+
+       for(var i = 0; i < armas.length; i++){
+          
+             var html = ''
+
+             html += '<tr>'
+             
+             html +='<td>' + armas[i].arma + '</td>'
+
+
+             html +='<td>' + armas[i].dano + '</td>'
+
+             
+             html +='<td>' + armas[i].municao + '</td>'
+      
+             
+             html +='<td>' + armas[i].epoca + '</td>'
+             
+              html += '</tr>'
+
+              $('#lista_armas').append(html)
+
+    }
+  })
+
+                                    //Calculando atributos
+
+  $('#calcularAtributos').click(function(){
+    $('#tabelaatributos').empty()
+    socket.emit('calcularAtributos')
+  })
+  
+  socket.on('imprimirAtributos',function(dados){
+
+     var dados1 = dados.grupo1
+
+            var dados2 = dados.grupo2
+
+            var dados3 = dados.grupo3
+
+
+            var id1 = ['for','con','des','apa','pod']
+
+            var id2 = ['tam','int','edu']
+
+
+            var impressao = function(atributo,valor){
+                  var html = ''
+
+                             html += '<tr>'
+                                   
+                             html +='<td>' + atributo + '</td>'
+
+
+                             html +='<td>' + valor + '</td>'
+
+                                   
+                             html += '</tr>'
+
+                         $('#tabelaatributos').append(html)
+                }
+
+
+         for(var i = 0; i < dados1.length;i++){
+          
+          $('#'+id1[i]).val(dados1[i])
+          
+          impressao(id1[i],dados1[i])
+
+         }
+
+         for(var i = 0; i < dados2.length;i++){
+          $('#'+id2[i]).val(dados2[i])
+          impressao(id2[i],dados2[i])
+
+         }
+
+         $('#sor').val(dados3)
+          impressao('sor',dados3)
+
+  })
+
+$('#enviarIdade').click(function(){
+  var idade = parseInt($('#idade').val())
+  socket.emit('enviarIdade',{idade:idade})
+}
+)
+
+
+  socket.on('imprimirModificadorIdade',function(modificador){
+    $('#opcoesModificadores').empty()
+    var modificadores = modificador.funcao
+
+    let selecao = function(valores,qtd){ 
+    $("#selecionarAlteracao").click(function(){
+
+                var total = 0;
+                for(var i = 1; i<qtd; i++){
+
+                total += parseInt($('input[type=number][name = '+valores[i]+']').val())
+          }
+        
+       
+
+          if(total > valores[0] || total < valores[0] ){
+            var erro = '<h5> O valor somado precisa ser igual a '+valores[0]+ '</h5>' 
+            $('#opcoesModificadores').append(erro)
+          }
+
+          else{
+            var edu = parseInt($('#edu').val())
+            for(var i = 1; i<qtd; i++){
+                var resultado =  $('#'+valores[i]).val() 
+                resultado -= parseInt($('input[type=number][name = '+valores[i]+']').val())
+                $('#'+valores[i]).val(resultado)
+          }
+            alert('teste')
+            socket.emit('verificacaoEdu',{vezes:valores[qtd], pontos:edu})
+          }
+
+          
+ }) 
+
+
+}
+          
+
+  
+    
+    switch(modificadores.length){
+      case 7:
+
+
+         var  html = ''
+
+          html += '<label> Limite </label> <br>'
+
+          html += '<input value = ' + modificadores[0] + ' type = number disabled =disabled> </input><br> '
+
+          for(var i = 1; i<4; i++){
+            html += '<label>' + modificadores[i] + '</label> <br>'
+
+            html += '<input type = "number" name = "'+modificadores[i]+'"min ="'+1+'"max = "'+eval(modificadores[0] - 2)+'"> <br>'
+          }
+
+          var button = '<button type="button"  Id = "selecionarAlteracao" class="btn btn-primary">Save changes</button>'
+
+          $('#opcoesModificadores').append(html)
+
+          $('#button').append(button)
+
+          selecao(modificadores,4)
+
+          var apa = $('#apa').val()
+          apa -= modificadores[6]
+          $('#apa').val(apa)
+
+      break
+
+
+      case 5:
+
+        var  html = ''
+
+          html += '<label> Limite </label> <br>'
+
+          html += '<input value = ' + modificadores[0] + '> <br>'
+
+          for(var i = 1; i<3; i++){
+            html += '<label>' + modificadores[i] + '</label> <br>'
+
+            html+= '<input type = "number" name = "'+modificadores[i]+'" "min ="'+1+'" max= "'+eval(modificadores[0] - 1)+'"> <br>'
+
+
+          }
+
+          var button = '<button type="button"  Id = "selecionarAlteracao" class="btn btn-primary">Save changes</button>'
+
+          $('#opcoesModificadores').append(html)
+
+          $('#button').append(button)
+
+           selecao(modificadores,3)
+
+           socket.emit('calcularSorte',{sorte:$('#sor').val()})
+
+           socket.on('resultadoSorte',function(dado){
+          $('#sor').val(dado.melhoria)
+        })
+      
+
+      break
+
+      case 2:
+
+        socket.emit('verificacaoEdu',{vezes:1, pontos:$('#edu').val()})
+
+      break
+    }
+
+
+   })
+
+  socket.on('resultadoEDU',function(bonus){
+
+            console.log($('#edu').val())
+            console.log(bonus.melhoria)
+           var edu = parseInt($('#edu').val())
+            edu += parseInt(bonus.melhoria)
+            $('#edu').val(edu)
+              console.log($('#edu').val())
+  
+          })
+
+
+
+                                            //calculando Pontos de perícias
+
+        
+
+$("#selecionarOcupacao").click(function(){
+
+                if($("#ocupacao").val() != ''){
+                socket.emit('recuperarModificador',{profissao:$('#ocupacao').val()})
+
+          }
+
+          socket.on('calcularModificador',function(resultado){
+                 $('#opcoesModificadores').empty()
+                 $('#button').empty()
+
+                 $('#opcoesModificadores').append(resultado.dado)
+
+                 var button = '<button type="button"  Id = "selecionarModificador" class="btn btn-primary">Save changes</button>'
+                 
+                 $('#button').append(button)
+
+                 $("#selecionarModificador").click(function(){
+  
+  $('input:checkbox[name="modificadores"]:checked').map(function(){
+
+    var resultado  = $(this).val()
+
+    $('#ptsOcupacionais').val(eval(resultado))
+  })
+
+    $('#ptsDeInteresse') .val($('#int').val()*2)
+
+    $('#selecionarAlteracao').val('')
+
+
+    
+})   
+                  
+                })
+
+                     
+
+          })
+
+
+                                                //atribuindo valor as habilidades
+
+  $('#atribuirValorHabilidade').click(function(){
+    $('#lista').empty()
+
+    var html = ''
+
+    html += '<label> Pontos Ocupacionais </label>'
+
+    html += '<input>' + $('ptsOcupacionais').val() +'</input>'
+
+    html += '<label> Pontos de Interesse </label>'
+
+    html += '<input>' + $('ptsDeInteresse').val() +'</input>'
+
+    $('#lista').append(html)
+
+  })
+
+
+
+
+
+        
+
+
+      
+    </script>
+</body>
+</html>

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FICHA</title>
+<meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/estilo_ficha.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="code.js"></script>
+
+</head>
+<body>
+
+<div id="container2" class="subposicao">
+
+  <div class="caixa">
+  <header>
+    
+    <section id='logo'>
+      
+    </section>
+
+  </header>
+
+  <section id="atributos">
+<tbody>
+<table>
+
+<tr>
+
+<td>
+
+<label>for</label>
+<input class="form-control" id='for' type="text" placeholder="Default input" disabled="disabled">
+
+
+
+
+</td>
+
+
+
+
+<td>
+
+<label>con</label>
+<input class="form-control" id='con' type="text" placeholder="Default input" disabled="disabled">
+
+
+
+</td>
+
+
+<td>
+
+<label>tam</label>
+<input class="form-control" id='tam' type="text" placeholder="Default input" disabled="disabled">
+
+
+
+
+
+
+</td>
+
+</tr>
+
+<tr>
+
+
+<td>
+
+<label>des</label>
+<input class="form-control" id='des' type="text" placeholder="Default input" disabled="disabled">
+
+
+
+
+
+</td>
+
+
+
+<td>
+
+<label>apa</label>
+<input class="form-control" id='apa' type="text" placeholder="Default input" disabled="disabled">
+
+
+
+
+</td>
+
+
+
+
+<td>
+
+<label>int</label>
+<input class="form-control" id='int' type="text" placeholder="Default input" disabled="disabled">
+
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<label>pod & san</label>
+<input class="form-control" id='pod' type="text" placeholder="Default input" disabled="disabled">
+
+
+
+</td>
+
+
+
+
+<td>
+
+<label>edu</label>
+<input class="form-control" id='edu' type="text" placeholder="Default input" disabled="disabled">
+
+
+
+
+</td>
+
+
+<td>
+
+<label>sor</label>
+<input class="form-control" id='sor' type="text" placeholder="Default input" disabled="disabled">
+
+
+
+
+</td>
+</tr>
+
+</table>
+
+</tbody>
+  </section>
+
+
+ <section id="habilidades">
+
+ 	<div class="row">
+      <div class="col">
+        <table class="table table-custom">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Habilidade</th>
+            <th scope="col">Valor</th>
+          </tr>
+        </thead>
+	       <tbody id="tabelaHabilidades">
+	       </tbody>
+     </table>
+         </div>
+</div>
+
+</section>
+
+</div>
+
+
+  <div class="caixa">
+
+
+<section id="armas">
+    <h1>Armas</h1>
+  <select class="custom-select custom-select-lg mb-3" id="armaBranca">
+  <option selected value ='null'>Arma Branca</option>
+  <option>Arco e Flecha Armas de Fogo (Arcos)</option>
+
+  <option>Soqueira Lutar (Briga)</option>
+   
+ <option>Chicote Lutar(Chicotes)</option>
+
+  <option>Tocha Acesa Lutar (Briga)</option>
+
+  <option>Serra-Elétrica</option>
+
+  <option>Blackjack-(Cassetete)</option>
+
+  <option>Porrete grande</option>
+
+  <option>Porrete pequeno</option>
+
+  <option>Besta (e) Armas de Fogo (Arcos)</option>
+
+  <option>Garrote*(e) Lutar (Garrotes)</option>
+
+  <option>Machadinha/Foicinha (e) Lutar (Machados)</option>
+
+  <option>Faca, Grande(facão, etc.)</option>
+
+  <option>Faca, Média (faca de cozinha, etc.)</option>
+
+  <option>Faca, Pequena (canivete, etc.) (e)</option>
+
+  <option>Cabo Eletrizado,carga de 220 volts</option>
+ 
+  <option>Nunchaku Lutar</option>
+
+  <option>Pedra, Arremessada</option>
+
+  <option>Shuriken(e)</option>
+
+  <option>Lança (lança de cavalaria) (e) Lutar (Lanças) </option>
+
+  <option>Shuriken (e)</option>
+
+  <option>Lança (lança de cavalaria) (e) Lutar (Lanças) </option>
+
+  <option>Lança, arremessada (e)</option>
+
+  <option>Shuriken (e) </option>
+
+  <option>Lança (lança de cavalaria) (e) Lutar (Lanças) </option>
+
+  <option>Lança, arremessada(e)</option>
+
+  <option>Espada,pesada (Sabre de Cavalaria)</option>
+
+  <option>Espada, média(rapieira,florete pesado) (e)</option>
+
+  <option>Espada, leve(florete de esgrima afiado,bengala-espada)(e)</option>
+
+  <option> Taser (contato)*</option>
+
+  <option>Taser (dardo)</option>
+
+  <option>Bumerangue de Guerra</option>
+
+  <option>Machado de Lenhador (e)</option>
+ 
+</select>
+<select class="custom-select custom-select-lg mb-3" id="pistola">
+  <option selected value ='null'>Pistola</option>
+  <option>Pederneira</option>
+
+  <option>.22 Curta Automática</option>
+
+  <option>.25 Derringer </option>
+
+  <option>Revólver .32 </option>
+
+  <option>Automática .32 ou 7.65mm</option>
+
+  <option>Revólver.357 Magnum</option>
+ 
+  <option>Revólver .38 ou 9mm</option>
+
+  <option>Automática .38 </option>
+
+  <option>Beretta M9 Armas de Fogo (pistolas)</option>
+
+  <option>Glock 17 9mm Auto</option>
+
+  <option>Luger Modelo P08</option>
+
+  <option>Revólver .41</option>
+
+  <option>Revólver .44 Magnum</option>
+
+  <option>Revólver .45</option>
+
+  <option>Automática .45</option>
+
+  <option>IMI Desert Eagle</option>
+
+  
+</select>
+<select class="custom-select custom-select-lg mb-3" id="fuzil">
+  <option selected value ='null'>Fuzil de assalto</option>
+  <option>AK-47 ou AKM</option>
+
+  <option>AK-74</option>
+
+  <option>Barrett Model 82</option>
+
+  <option>FN FAL Leve Automática</option>
+
+  <option>Fuzil de Assalto Galil</option>
+
+  <option>M16A2</option>
+
+  <option>M4 Steyr AUG</option>
+
+  <option>Beretta M70/90</option>
+
+</select>
+<select class="custom-select custom-select-lg mb-3" id="rifle">
+  <option selected value ='null'>Rifle</option>
+
+  <option>Carabina de Alavanca .30 </option>
+
+  <option>Rifle Martini Henry .45</option>
+
+  <option>Rifle de Ar do Coronel Moran</option>
+
+  <option>Rifles Garand M1, M2 </option>
+
+  <option>Carabina SKS Armas de Fogo (rifles)</option>
+
+  <option>Lee-Enfeld .303</option>
+
+  <option>Rifle de Ferrolho .30-06</option>
+
+   <option>Rifle Semi Automático .30-06</option>
+
+  <option>Rifle Marlin .444</option>
+
+  <option>Rifle de Elefantes</option>
+</select>
+<select class="custom-select custom-select-lg mb-3" id="espingarda">
+  <option selected value ='null'>Espingarda</option>
+  <option>Espingarda Calibre 20 (2C)</option>
+
+  <option>Espingarda Calibre 16 (2C)</option>
+
+  <option>Espingarda Calibre 12 (2C)</option>
+
+  <option>Escopeta Calibre 12 (Deslizante)</option>
+
+  <option>Escopeta Calibre 12 (semi-auto)</option>
+
+  <option>Escopeta Calibre 12 (2C serrada)</option>
+
+  <option>Espingarda Calibre 10 (2C)</option>
+
+  <option>Benelli M3 Cal. 12 (coronha retrátil)</option>
+
+  <option>SPAS Cal. 12 (coronha retrátil)</option>
+
+</select>
+
+<select class="custom-select custom-select-lg mb-3" id="submetralhadora">
+  <option selected value ='null'>Submetralhadora</option>
+  <option>Bergmann MP181/MP2811</option>
+
+  <option>Heckler & Koch MP5</option>
+
+  <option>Ingram MAC-11</option>
+
+  <option>Skorpion SMT</option>
+
+  <option>Thompson</option>
+
+  <option>Uzi SMG</option>
+
+</select>
+
+<select class="custom-select custom-select-lg mb-3" id="metralhadora">
+  <option selected value ='null'>Metralhadora</option>
+  <option>Gatling Gun Modelo 1882</option>
+
+  <option>Browning Auto Rifle M1918</option>
+
+  <option>Browning M1917A1 .30</option>
+
+  <option>Bren Gun</option>
+
+  <option>Lewis Gun Mark I</option>
+
+  <option>Minigun</option>
+
+  <option>FN Minimi, 5.56mm</option>
+
+  <option>Metralhadora Vickers .303</option>
+
+</select>
+
+<select class="custom-select custom-select-lg mb-3" id="explosivos">
+  <option selected value ='null'>Explosivos e armas pesadas</option>
+  <option>Coquetel Molotov</option>
+
+  <option>Pistola Sinalizadora</option>
+
+  <option>Lança Granadas M79</option>
+
+  <option>Banana de Dinamite</option>
+
+  <option>Detonador</option>
+
+  <option>Bomba Tubo</option>
+
+  <option>Explosivo Plástico (C-4), 100 g.</option>
+
+  <option>Granada de Mão</option>
+
+  <option>Morteiro 81mm</option>
+
+  <option>Canhão de Artilharia 75mm</option>
+
+  <option>Canhão de Tanque 120mm (estabilizado)</option>
+
+  <option>Artilharia Naval de 5 polegadas, estabilizado</option>
+
+  <option>Mina Antipessoal</option>
+
+  <option>Mina Claymore</option>
+
+  <option>Lança-Chamas</option>
+
+  <option>Lança-Foguetes</option>
+
+
+</select>
+<br>
+<button type="button" class="btn btn-dark" onclick="calcularArmas()">Primary</button>
+
+<div class="row">
+      <div class="col">
+        <table class="table table-custom">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Arma</th>
+            <th scope="col">Excluir</th>
+          </tr>
+        </thead>
+         <tbody id="tabelaArmas">
+         </tbody>
+     </table>
+         </div>
+</div>
+  
+ </section>
+
+
+</div>
+<button type="button" class="btn btn-dark" id="encerrar" onclick="gravarDados('ficha')">Salvar</button>
+</div>
+
+<!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Inclui todos os plugins compilados (abaixo), ou inclua arquivos separadados se necessário -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

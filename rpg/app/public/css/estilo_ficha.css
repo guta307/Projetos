@@ -1,0 +1,200 @@
+@charset 'utf-8',
+*{
+	margin:0px;
+	padding: 0px;
+}
+
+
+@keyframes changeBackgroundColor {
+  0% {
+    background: url(imagens/b1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  50% {
+    background: url(imagens/b2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+  100% {
+    background: url(imagens/b3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+body{
+	height: 100%;
+	width: 100%;
+}
+
+input{
+	text-align: center;
+}
+.sobreposicao{
+	position: absolute;
+	z-index: 1;
+}
+
+.subposicao{
+	position: absolute;
+	z-index: 0;
+}
+
+/*--AREA DE LOGIN--*/
+#container1{
+	position: absolute;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	animation: changeBackgroundColor 15s infinite alternate;}
+
+.centralizar{
+	position: absolute;
+	top:25%;
+	left:38%;
+}
+#caixa-login{
+	margin: 0 auto;
+	width: 400px;
+	height: 400px;
+	background-color: white;
+	border-radius: 50px;
+	text-align: center;
+	padding: 0 40px 0 40px;
+	opacity: 0.9;
+}
+
+#insercao{
+	position: relative;
+	top:40%;
+}
+
+#insercao input{
+	margin-bottom: 15px;
+}
+
+/*--FIM DA AREA DE LOGIN--*/
+
+#container2{
+	position: relative;
+	min-height: 200%;
+	max-height: auto;
+	width: 100%;
+	background-color: #a9a9a9;
+	background-size: cover;
+}
+
+.caixa{
+	clear: both;
+	min-height: 50%;
+	max-height: auto;
+	width: 100%;
+	background-color: #a9a9a9;
+}
+
+header{
+	padding-top:40px;
+	background: black;
+	height: 200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#logo{
+	margin:0px auto;
+	height: 150px;
+	width: 138px;
+	background: url(imagens/logo.jpg) no-repeat;
+}
+
+#atributos{
+	margin: 0 auto;
+	text-align: center;
+	height: 350px;
+	width:50%;
+}
+
+#atributos label{
+	font-size: 1.5em;
+	display: block;
+}
+
+
+#atributos table{
+	width:100%;
+	height: 100%;
+}
+
+#atributos input{
+	display: inline-block;
+	width:50%;
+	height: 50%;
+	pointer-events: none;
+}
+
+
+
+.table-custom{
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.table-custom{
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 30px;
+	font-size: 1.2em;
+}
+
+.table-custom th{
+	padding: 0;
+	text-align: center;
+}
+
+.btn-custom {
+	width: 30px;
+	height: 30px;
+	border-radius: 300px;
+}
+/*começo de habilidade*/
+
+#habilidades{
+	width: 50%;
+	display: block;
+	margin:0 auto;
+}
+
+
+/*fim de habilidade*/
+
+
+/*começo de armas*/
+
+
+#armas{
+	margin: 0 auto;
+	text-align: center;
+	width: 50%;
+}
+
+#armas th{
+	text-align: center;
+}
+
+#armas select{
+	display: inline-block;
+	width: 20%;
+}
+/*fim de armas*/
+
+#encerrar{
+	width: 10%;
+	height: 8%;
+margin-left:90%; 
+
+}
+
